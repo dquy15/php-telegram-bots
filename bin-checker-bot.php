@@ -1,5 +1,5 @@
 <?php
-    date_default_timezone_set("Asia/kolkata");
+    date_default_timezone_set("Asia/Ho_Chi_Minh");
     //Data From Webhook
     $content = file_get_contents("php://input");
     $update = json_decode($content, true);
@@ -12,7 +12,7 @@
 
     //Start message
     if($message == "/start"){
-        send_message($chat_id, "Hey $firstname  \nUse /bin xxxxxx To check Bins  \nBot by @reboot13 ");
+        send_message($chat_id, "Hey $firstname  \nUse /bin xxxxxx To check Bins  \nBot by @Dquy15 ");
     }
 
 
@@ -76,7 +76,7 @@ else {
     
 //Send Messages with Markdown (Global)
       function send_MDmessage($chat_id, $message){
-       $apiToken = "Your Bot API Token";
+       $apiToken = "1483571031:AAHJLgnEsVVot--XTISrnwLmvVn-mKlBoe0";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text&parse_mode=Markdown");
     }
